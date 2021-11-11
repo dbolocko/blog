@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/gr.css">
+    </head>
+    <body>
+        <center><a href="/push_post" width="600px"><button width="600">
+            новая запись
+        </button></a></center>
+        <div>
+        {% for post in posts %}
+        <div class="postst"><p>{{ post.author.username }} says: <br> <b>{{ post.body }}</b></p></div>
+        {% endfor %}
+    </div>
+    </body>
+</html>
