@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title> Пост #{{post.num}}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/gr.css">
+        <style> table{height: 80%;}</style>
+    </head>
+    <body>
+        <center><p>Поделиться постом можно скопировав ссылку на эту страницу ;)</p>
+        <table >
+            <tr>
+              <td style="vertical-align: middle"><center>
+                <div>
+                <div class="postst"><p>{{ post.author.username }} says: <br> <b>{{ post.body }}</b></p>
+                </div>
+            </div></center></td>
+            </tr>
+            </table>
+        <a href="/index"><button>Смотреть все посты</button></a>
+        </center>
+    </body>
+</html>
