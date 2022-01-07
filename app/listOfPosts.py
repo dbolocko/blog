@@ -1,18 +1,19 @@
-numOfLastPost=3
+nr=0
 listOfPosts = [
         {
-            'author': {'username': 'John'},
+            'author': 'John',
             'body': 'Beautiful day in Portland!',
             'num': '3'
         },
         {
-            'author': {'username': 'Susan'},
+            'author': 'Susan',
             'body': 'The Avengers movie was so cool!',
             'num':'2'
         }, 
         {
-            'author': {'username': 'Ипполит'},
-            'body': 'Какая гадость эта ваша заливная рыба!!',
+            'author': 'Ипполит',
+            'body': 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ',
             'num':'1'
         }
     ]
+

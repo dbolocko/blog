@@ -18,7 +18,7 @@ margin-left: auto;
 margin-right: auto
 }
 
-input[type=submit], button {
+input[type=submit], .smbt {
     width: 100%;
     background-color: #FFD200;
     color:rgb(255, 255, 255);
@@ -29,20 +29,17 @@ input[type=submit], button {
     cursor: pointer;
     font-weight: 700;
     max-width: 500px;
+    min-width: 50px;
     margin-left: auto;
     margin-right: auto
 }
 
 .postst{
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #f2f2f2;
   padding: 15px;
   margin: 10px 0 0 0 ;
-  max-width: 500px;
+  max-width: 470px;
   margin-left: auto;
   margin-right: auto
-}
-table{
-  width: 100%;
-  
 }

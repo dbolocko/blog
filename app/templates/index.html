@@ -3,20 +3,36 @@
         <title>{{ title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/static/gr.css">
+        <link rel="shortcut icon" href="/static/favicon.ico">
+        <style> table{max-width: 600px;}</style>
     </head>
     <body>
-        <center><a href="/push_post" width="600px"><button width="600">
-            новая запись
-        </button></a></center>
+        <center>
+            <table>
+                <tr>
+                    <td> 
+                        <button>на</button>
+                    </td>
+                    <td width="100%">
+                        <a href="/push_post" width="600px">
+                            <button width="600" class="smbt">новая запись</button>
+                        </a>
+                    </td>
+                    <td>
+                        <button>иь</button>
+                    </td>
+                </tr>
+            </table> 
+        </center>
         <div>
         {% for post in posts %}
         <div class="postst">
-            <table>
+            <table width="100%">
                 <tr>
                     <td>
-                        <p>{{ post.author.username }} says: <br> <b>{{ post.body }}</b></p>
+                        <p>{{ post.author }} says: <br> <b>{{ post.body }}</b></p>
                     </td>
-                    <td width=35>
+                    <td width="35px">
                         <a href="/post/{{ post.num }}"><img src="/static/share.png"></a>
                     </td>
                 </tr>
